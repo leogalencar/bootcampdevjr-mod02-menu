@@ -27,8 +27,11 @@
                 <div class="dishes">
                     <div class="dish">
                         <img src="img/bife.jpg" alt="Bife">
-                        Bife com batata
+                        <div class="dish-name">
+                            Bife com batata
+                        </div>
                         <div class="dish-price">
+                            <input type="hidden" name="price" value="30">
                             R$ 30,00
                         </div>
                         <div class="quantity buttons_added">
@@ -39,8 +42,11 @@
                     </div>
                     <div class="dish">
                         <img src="img/coxa.jpg" alt="Coxa de frango">
-                        Coxa de Frango Crocante
+                        <div class="dish-name">
+                            Coxa de Frango Crocante
+                        </div>
                         <div class="dish-price">
+                            <input type="hidden" name="price" value="25">
                             R$ 25,00
                         </div>
                         <div class="quantity buttons_added">
@@ -51,8 +57,11 @@
                     </div>
                     <div class="dish">
                         <img src="img/panela.jpg" alt="Carne de panela">
-                        Carde ne Panela
+                        <div class="dish-name">
+                            Carde ne Panela
+                        </div>
                         <div class="dish-price">
+                            <input type="hidden" name="price" value="22">
                             R$ 22,00
                         </div>
                         <div class="quantity buttons_added">
@@ -74,8 +83,11 @@
                 <div class="dishes">
                     <div class="dish">
                         <img src="img/farofa.jpg" alt="Farofa">
-                        Farofa
+                        <div class="dish-name">
+                            Farofa
+                        </div>
                         <div class="dish-price">
+                            <input type="hidden" name="price" value="10">
                             R$ 10,00
                         </div>
                         <div class="quantity buttons_added">
@@ -86,8 +98,11 @@
                     </div>
                     <div class="dish">
                         <img src="img/salad.jpg" alt="Salada">
-                        Salada
+                        <div class="dish-name">
+                            Salada
+                        </div>
                         <div class="dish-price">
+                            <input type="hidden" name="price" value="8">
                             R$ 8,00
                         </div>
                         <div class="quantity buttons_added">
@@ -98,8 +113,11 @@
                     </div>
                     <div class="dish">
                         <img src="img/torresmo.jpg" alt="Torresmo">
-                        Torresmo
+                        <div class="dish-name">
+                            Torresmo
+                        </div>
                         <div class="dish-price">
+                            <input type="hidden" name="price" value="12">
                             R$ 12,00
                         </div>
                         <div class="quantity buttons_added">
@@ -117,18 +135,22 @@
                 </div>
                 <div class="entry">
                     <input type="text" name="name" id="name" placeholder="Nome">
+                    <label for="name"></label>
                     <input type="text" name="number" id="number" placeholder="Número">
+                    <label for="number"></label>
                     <input type="email" name="email" id="email" placeholder="Email">
+                    <label for="email"></label>
                 </div>
             </div>
-            <button>Calcular</button>
+            <button onclick="calculateOrder()">Calcular</button>
 
-            <div class="order">
+            <div class="order" id="order">
 
             </div>
         </div>
         
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/quantity.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
