@@ -7,78 +7,88 @@
         <title>Projeto Menu</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="container">
             <header>
-                Imagem
-                <h1>Menu - Faça A Sua Escolha</h1>
+                <img src="" alt="">
+                Menu - Faça A Sua Escolha
             </header>
 
-            <div class="main-dish">
+            <div class="block">
                 <div class="section-title">
-                    <h3>Prato Principal</h3>
-                    Todos os pratos acompanham arroz, feijão e a sobremesa do dia.
-                </div>
-                <div class="dish">
-                    Bife com batata
-                    <div class="dish-price">
-                        R$ 30,00
+                    Prato Principal
+                    <div class="section-subtitle">
+                        <small>Todos os pratos acompanham arroz, feijão e a sobremesa do dia.</small>
                     </div>
-                    Quantidade
                 </div>
-                <div class="dish">
-                    Coxa de Frango Crocante
-                    <div class="dish-price">
-                        R$ 25,00
+                <div class="dishes">
+                    <div class="dish">
+                        Bife com batata
+                        <div class="dish-price">
+                            R$ 30,00
+                        </div>
+                        Quantidade
                     </div>
-                    Quantidade
-                </div>
-                <div class="dish">
-                    Carde ne Panela
-                    <div class="dish-price">
-                        R$ 22,00
+                    <div class="dish">
+                        Coxa de Frango Crocante
+                        <div class="dish-price">
+                            R$ 25,00
+                        </div>
+                        Quantidade
                     </div>
-                    Quantidade
+                    <div class="dish">
+                        Carde ne Panela
+                        <div class="dish-price">
+                            R$ 22,00
+                        </div>
+                        Quantidade
+                    </div>
                 </div>
             </div>
 
-            <div class="side-dish">
+            <div class="block">
                 <div class="section-title">
-                    <h3>Acompanhamentos</h3>
-                    Porções para uma pessoa
-                </div>
-                <div class="dish">
-                    Farofa
-                    <div class="dish-price">
-                        R$ 10,00
+                    Acompanhamentos
+                    <div class="section-subtitle">
+                        <small>Porções para uma pessoa</small>
                     </div>
-                    Quantidade
                 </div>
-                <div class="dish">
-                    Salada
-                    <div class="dish-price">
-                        R$ 8,00
+                <div class="dishes">
+                    <div class="dish">
+                        Farofa
+                        <div class="dish-price">
+                            R$ 10,00
+                        </div>
+                        Quantidade
                     </div>
-                    Quantidade
-                </div>
-                <div class="dish">
-                    Torresmo
-                    <div class="dish-price">
-                        R$ 12,00
+                    <div class="dish">
+                        Salada
+                        <div class="dish-price">
+                            R$ 8,00
+                        </div>
+                        Quantidade
                     </div>
-                    Quantidade
+                    <div class="dish">
+                        Torresmo
+                        <div class="dish-price">
+                            R$ 12,00
+                        </div>
+                        Quantidade
+                    </div>
                 </div>
             </div>
 
-            <div class="personal-data">
+            <div class="block">
                 <div class="section-title">
-                    <h3>Dados Pessoais</h3>
+                    Dados Pessoais
                 </div>
-                <input type="text" name="name" id="name">
-                <input type="text" name="number" id="number">
-                <input type="email" name="email" id="email">
+                <div class="entry">
+                    <input type="text" name="name" id="name" placeholder="Nome">
+                    <input type="text" name="number" id="number" placeholder="Número">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
             </div>
             <button>Calcular</button>
 
