@@ -8,6 +8,11 @@ function calculateOrder() {
 
     var total = 0;
 
+    var formatter = new Intl.NumberFormat('pt-BR', {
+        style: 'currency',
+        currency: 'BRL',
+    });
+
     output.innerHTML = '';
 
     if (verifyQuantity && verifyDataEntry(name, number, email))
@@ -22,13 +27,13 @@ function calculateOrder() {
 
             if (quantity > 0)
             {
-                output.innerHTML += `<li>Prato: ${dish_name} - Preço unitário: R$ ${price} - Quantidade: ${quantity} - Total: R$ ${price * quantity}</li>`;
+                output.innerHTML += `<li>Prato: ${dish_name} - Preço unitário: ${formatter.format(price)} - Quantidade: ${quantity} - Total: ${formatter.format(price * quantity)}</li>`;
 
                 total += price * quantity;
             }
         }
 
-        output.innerHTML += `</ul> <p class="final-price"><strong>Preço final R$ ${total}</strong></p>`;
+        output.innerHTML += `</ul> <p class="final-price"><strong>Preço final ${formatter.format(total)}</strong></p>`;
     }
 }
 
