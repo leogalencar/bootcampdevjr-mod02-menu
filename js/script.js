@@ -15,7 +15,7 @@ function calculateOrder() {
 
     output.innerHTML = '';
 
-    if (verifyQuantity && verifyDataEntry(name, number, email))
+    if (verifyDataEntry(name, number, email) && verifyQuantity())
     {
         output.innerHTML = `<p>Caro <strong>${name.value}</strong></p> <br> Seguem os dados do seu pedido. <br><br> O seu pedido é: <br> <ul>`;
 
@@ -27,7 +27,7 @@ function calculateOrder() {
 
             if (quantity > 0)
             {
-                output.innerHTML += `<li>Prato: ${dish_name} - Preço unitário: ${formatter.format(price)} - Quantidade: ${quantity} - Total: ${formatter.format(price * quantity)}</li>`;
+                output.innerHTML += `<li>Prato: ${dish_name} - Preço unitário: ${formatter.format(price)} - Quantidade: ${quantity} - Total: ${formatter.format(price * quantity)}.</li>`;
 
                 total += price * quantity;
             }
@@ -53,6 +53,7 @@ function verifyQuantity()
     }
     else
     {
+        document.getElementById('order').innerHTML = '<p style="color: #ff0000;">Selecione pelo menos um produto para efetuar o pedido.</p>';
         return false;
     }
 }
